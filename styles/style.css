@@ -1,0 +1,52 @@
+/* ------------------------GENERAL------------------------ */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ------------------------CONTAINER------------------------ */
+.wrapper {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 260px 1fr 1fr;
+  grid-template-rows: 210px 1fr;
+  grid-template-areas:
+    "Picture Header Description"
+    "Informations Experiences Experiences";
+}
+
+/* ------------------------HEADER------------------------ */
+
+.header {
+  grid-area: Header;
+  background-color: red;
+}
+
+/* ------------------------DESCRIPTION------------------------ */
+
+.description {
+  grid-area: Description;
+  background-color: blue;
+}
+
+/* ------------------------PROFILE PICTURE------------------------ */
+
+.profile-pic {
+  grid-area: Picture;
+  background-color: black;
+}
+
+/* ------------------------ASIDE------------------------ */
+
+.informations {
+  grid-area: Informations;
+  background-color: green;
+}
+
+/* ------------------------MAIN------------------------ */
+
+.experiences {
+  grid-area: Experiences;
+  background-color: gray;
+}
