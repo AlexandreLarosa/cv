@@ -14,6 +14,19 @@ body {
   font-family: "Indie Flower", cursive;
 }
 
+a {
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+p {
+  margin: 0;
+}
+
 /* ------------------------CONTAINER------------------------ */
 .wrapper {
   display: grid;
@@ -81,9 +94,29 @@ body {
 
 .informations {
   grid-area: Informations;
-  background-color: green;
+  background-color: var(--bg-primary);
+  color: var(--color-text);
 }
 
+.informations-contact {
+  padding: 0 10px;
+  border-bottom: 1px solid white;
+}
+
+.informations-contact-title {
+  font-size: 18px;
+  text-decoration: underline;
+}
+
+.informations-contact div {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.informations-contact i {
+  margin-right: 10px;
+}
 /* ------------------------MAIN------------------------ */
 
 .experiences {
