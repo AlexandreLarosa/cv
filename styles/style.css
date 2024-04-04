@@ -3,7 +3,7 @@
 /* ------------------------GENERAL------------------------ */
 
 * {
-  --bg-primary: #480da1;
+  --bg-primary: #1b096a;
   --color-text: white;
 }
 
@@ -18,8 +18,8 @@ body {
 .wrapper {
   display: grid;
   height: 100vh;
-  grid-template-columns: 260px 1fr 1fr;
-  grid-template-rows: 210px 1fr;
+  grid-template-columns: 290px 1fr 1fr;
+  grid-template-rows: 240px 1fr;
   grid-template-areas:
     "Picture Header Description"
     "Informations Experiences Experiences";
@@ -64,9 +64,17 @@ body {
 
 /* ------------------------PROFILE PICTURE------------------------ */
 
-.profile-pic {
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   grid-area: Picture;
-  background-color: black;
+}
+
+.profile-pic {
+  border-radius: 100%;
+  height: 98%;
+  width: 80%;
 }
 
 /* ------------------------ASIDE------------------------ */
