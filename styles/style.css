@@ -92,6 +92,8 @@ p {
 
 /* ------------------------ASIDE------------------------ */
 
+/* ------------------------CONTACT------------------------ */
+
 .informations {
   grid-area: Informations;
   background-color: var(--bg-primary);
@@ -103,7 +105,7 @@ p {
   border-bottom: 1px solid white;
 }
 
-.informations-contact-title {
+.informations-title {
   font-size: 18px;
   text-decoration: underline;
 }
@@ -117,9 +119,32 @@ p {
 .informations-contact i {
   margin-right: 10px;
 }
+
+/* ------------------------LANGAGE------------------------ */
+
 /* ------------------------MAIN------------------------ */
 
 .experiences {
   grid-area: Experiences;
-  background-color: gray;
+  padding: 0 10px;
+}
+
+.experiences-title {
+  font-size: 30px;
+  margin: 15px 0;
+}
+
+.experiences-project-name {
+  font-size: 22px;
+  letter-spacing: 10px;
+  margin-bottom: 10px;
+}
+
+.experiences-project-name:hover {
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.experiences-project {
+  margin: 20px 0;
 }
