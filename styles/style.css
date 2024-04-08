@@ -172,11 +172,40 @@ p {
 
 .experiences-tech-container {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
 }
 
 .experiences-tech-container div {
   width: 30%;
   text-align: center;
+}
+
+@media only screen and (max-width: 851px) {
+  /* ------------------------CONTAINER------------------------ */
+
+  .wrapper {
+    grid-template-columns: 280px 1fr;
+    grid-template-rows: 240px 1fr;
+    grid-template-areas:
+      "Header Description"
+      "Informations Experiences ";
+  }
+
+  /* ------------------------HEADER------------------------ */
+
+  .header {
+    border-bottom: 1px solid white;
+  }
+
+  /* ------------------------PROFILE PICTURE------------------------ */
+
+  .profile {
+    display: none;
+  }
+
+  /* ------------------------Tech------------------------ */
+
+  .experiences-tech-container {
+    flex-wrap: wrap;
+  }
 }
