@@ -12,6 +12,8 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: "Indie Flower", cursive;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 a {
