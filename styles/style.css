@@ -120,9 +120,10 @@ p {
   margin-right: 10px;
 }
 
-/* ------------------------LANGAGE------------------------ */
+/* ------------------------Langues------------------------ */
 
 /* ------------------------MAIN------------------------ */
+/* ------------------------Projects------------------------ */
 
 .experiences {
   grid-area: Experiences;
@@ -131,7 +132,7 @@ p {
 
 .experiences-title {
   font-size: 30px;
-  margin: 15px 0;
+  margin: 20px 0;
 }
 
 .experiences-project-name {
@@ -147,4 +148,16 @@ p {
 
 .experiences-project {
   margin: 20px 0;
+}
+
+/* ------------------------Tech------------------------ */
+
+.experiences-tech-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 80px;
+}
+
+.experiences-tech-container div {
+  text-align: center;
 }
