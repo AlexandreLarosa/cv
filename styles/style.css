@@ -5,6 +5,8 @@
 * {
   --bg-primary: #1b096a;
   --color-text: white;
+  --padding-y: 0 10px;
+  --border-primary: 1px solid white;
 }
 
 body {
@@ -46,7 +48,7 @@ p {
   grid-area: Header;
   align-items: center;
   background-color: var(--bg-primary);
-  border-right: 1px solid white;
+  border-right: var(--border-primary);
   color: var(--color-text);
   display: flex;
   justify-content: center;
@@ -103,8 +105,8 @@ p {
 }
 
 .informations-contact {
-  padding: 0 10px;
-  border-bottom: 1px solid white;
+  padding: var(--padding-y);
+  border-bottom: var(--border-primary);
 }
 
 .informations-title {
@@ -125,8 +127,8 @@ p {
 /* ------------------------Degrees------------------------ */
 
 .degrees {
-  padding: 0 10px;
-  border-bottom: 1px solid white;
+  padding: var(--padding-y);
+  border-bottom: var(--border-primary);
 }
 
 .degrees-information {
@@ -136,7 +138,7 @@ p {
 /* ------------------------Langages------------------------ */
 
 .langages {
-  padding: 0 10px;
+  padding: var(--padding-y);
 }
 
 .star-container {
@@ -147,7 +149,7 @@ p {
 
 .experiences {
   grid-area: Experiences;
-  padding: 0 10px;
+  padding: var(--padding-y);
   font-size: 18px;
 }
 
@@ -197,7 +199,7 @@ p {
   /* ------------------------HEADER------------------------ */
 
   .header {
-    border-bottom: 1px solid white;
+    border-bottom: var(--border-primary);
   }
 
   /* ------------------------PROFILE PICTURE------------------------ */
@@ -233,7 +235,7 @@ p {
   /* ------------------------Description------------------------ */
 
   .description {
-    border-bottom: 1px solid white;
+    border-bottom: var(--border-primary);
     padding-bottom: 10px;
   }
 
