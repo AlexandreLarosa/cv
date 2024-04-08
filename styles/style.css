@@ -139,7 +139,10 @@ p {
   padding: 0 10px;
 }
 
-/* ------------------------MAIN------------------------ */
+.star-container {
+  margin-bottom: 10px;
+}
+
 /* ------------------------Projects------------------------ */
 
 .experiences {
@@ -207,5 +210,48 @@ p {
 
   .experiences-tech-container {
     flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: 601px) {
+  /* ------------------------CONTAINER------------------------ */
+  .wrapper {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "Header "
+      "Description"
+      "Informations"
+      "Experiences";
+  }
+
+  /* ------------------------Header------------------------ */
+
+  .header {
+    border-right: none;
+  }
+
+  /* ------------------------Description------------------------ */
+
+  .description {
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+  }
+
+  /* ------------------------Informations------------------------ */
+
+  .informations {
+    text-align: center;
+  }
+
+  .informations-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* ------------------------Projects------------------------ */
+
+  .experiences {
+    text-align: center;
   }
 }
